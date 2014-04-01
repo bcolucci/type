@@ -2,6 +2,7 @@
   "name": "bcolucci/type",
   "version": "1.0.0",
   "description": "Provides very simple classes to abstract some primitive PHP types.",
+  "license": "MIT",
   "require": {
     "star/collection": "1.1.*"
   },

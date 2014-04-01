@@ -1,18 +1,11 @@
 <?php
-/**
- * This file is property of crakmedia (http://crakmedia.com)
- *
- * PHP Version 5.4
- *
- * @author    Brice Colucci <bcolucci@crakmedia.com>
- */
 
-namespace Crak\Component\Type;
+namespace Bcol\Component\Type;
 
 /**
  * Class PositiveInteger
  *
- * @author Brice Colucci <bcolucci@crakmedia.com>
+ * @author Brice Colucci <brice.colucci@gmail.com>
  */
 class PositiveInteger extends Integer
 {

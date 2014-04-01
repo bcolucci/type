@@ -1,20 +1,13 @@
 <?php
-/**
- * This file is property of crakmedia (http://crakmedia.com)
- *
- * PHP Version 5.4
- *
- * @author Brice Colucci <bcolucci@crakmedia.com>
- */
 
 namespace Test\Type\Unit;
 
-use Crak\Component\Type\StrictPositiveInteger;
+use Bcol\Component\Type\StrictPositiveInteger;
 
 /**
  * Class StrictPositiveIntegerTest
  *
- * @author Brice Colucci <bcolucci@crakmedia.com>
+ * @author Brice Colucci <brice.colucci@gmail.com>
  */
 class StrictPositiveIntegerTest extends TypeTest
 {

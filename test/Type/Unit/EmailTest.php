@@ -1,24 +1,17 @@
 <?php
-/**
- * This file is property of crakmedia (http://crakmedia.com)
- *
- * PHP Version 5.4
- *
- * @author Brice Colucci <bcolucci@crakmedia.com>
- */
 
 namespace Test\Type\Unit;
 
-use Crak\Component\Type\Email;
+use Bcol\Component\Type\Email;
 
 /**
  * Class EmailTest
  *
- * @author Brice Colucci <bcolucci@crakmedia.com>
+ * @author Brice Colucci <brice.colucci@gmail.com>
  */
 class EmailTest extends TypeTest
 {
-    const VALID_EMAIL = "bcolucci@crakmedia.com";
+    const VALID_EMAIL = "brice.colucci@gmail.com";
 
     /**
      * @return string

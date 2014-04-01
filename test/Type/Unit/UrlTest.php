@@ -1,20 +1,13 @@
 <?php
-/**
- * This file is property of crakmedia (http://crakmedia.com)
- *
- * PHP Version 5.4
- *
- * @author Brice Colucci <bcolucci@crakmedia.com>
- */
 
 namespace Test\Type\Unit;
 
-use Crak\Component\Type\Url;
+use Bcol\Component\Type\Url;
 
 /**
  * Class UrlTest
  *
- * @author Brice Colucci <bcolucci@crakmedia.com>
+ * @author Brice Colucci <brice.colucci@gmail.com>
  */
 class UrlTest extends TypeTest
 {

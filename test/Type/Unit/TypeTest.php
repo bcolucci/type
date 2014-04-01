@@ -1,20 +1,13 @@
 <?php
-/**
- * This file is property of crakmedia (http://crakmedia.com)
- *
- * PHP Version 5.4
- *
- * @author Brice Colucci <bcolucci@crakmedia.com>
- */
 
 namespace Test\Type\Unit;
 
-use Crak\Component\Type\Type;
+use Bcol\Component\Type\Type;
 
 /**
  * Class TypeTest
  *
- * @author Brice Colucci <bcolucci@crakmedia.com>
+ * @author Brice Colucci <brice.colucci@gmail.com>
  */
 abstract class TypeTest extends \PHPUnit_Framework_TestCase
 {

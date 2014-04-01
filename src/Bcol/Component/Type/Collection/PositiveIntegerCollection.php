@@ -1,20 +1,13 @@
 <?php
-/**
- * This file is property of crakmedia (http://crakmedia.com)
- *
- * PHP Version 5.4
- *
- * @author Brice Colucci <bcolucci@crakmedia.com>
- */
 
-namespace Crak\Component\Type\Collection;
+namespace Bcol\Component\Type\Collection;
 
-use Crak\Component\Type\PositiveInteger;
+use Bcol\Component\Type\PositiveInteger;
 
 /**
  * Class PositiveIntegerCollection
  *
- * @author Brice Colucci <bcolucci@crakmedia.com>
+ * @author Brice Colucci <brice.colucci@gmail.com>
  */
 class PositiveIntegerCollection extends TypedCollection
 {

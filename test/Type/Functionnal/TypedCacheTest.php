@@ -1,34 +1,28 @@
 <?php
-/**
- * This file is property of crakmedia (http://crakmedia.com)
- *
- * PHP Version 5.4
- *
- * @author Brice Colucci <bcolucci@crakmedia.com>
- */
 
-namespace Test\Type\Functionnal;
+namespace Test\Type\Functional;
 
-require_once __DIR__ . "/IntegerCache.php";
+require_once __DIR__ . "/MemcachedStub.php";
+require_once __DIR__ . "/IntegerCachedCollectionStub.php";
 
-use Crak\Component\Type\Integer;
-use Crak\Component\Type\TypedCache;
+use Bcol\Component\Type\Collection\TypedCachedCollection;
+use Bcol\Component\Type\Integer;
 
 /**
  * Class TypedCacheTest
  *
- * @author Brice Colucci <bcolucci@crakmedia.com>
+ * @author Brice Colucci <brice.colucci@gmail.com>
  */
 class TypedCacheTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var TypedCache
+     * @var TypedCachedCollection
      */
     private $cache;
 
     public function setUp()
     {
-        $this->cache = new IntegerCache("an_integer_cache_");
+        $this->cache = new IntegerCachedCollectionStub("an_integer_cached_collection", new MemcachedStub());
     }
 
     public function testShouldBeACollectionAndBePersitent()
@@ -60,14 +54,14 @@ class TypedCacheTest extends \PHPUnit_Framework_TestCase
         $this->assertSame(2, $values[1]->getValue());
         $this->assertSame(3, $values[2]->getValue());
     }
-
-    public function testShouldBeFilterable()
-    {
-        $cacheWithoutOneAndThree = $this->cache->filter(function (Integer $i) {
-            return 2 === $i->getValue();
-        });
-
-        $this->assertSame(1, $cacheWithoutOneAndThree->count());
-        $this->assertSame(2, $cacheWithoutOneAndThree->first()->getValue());
-    }
+//
+//    public function testShouldBeFilterable()
+//    {
+//        $cacheWithoutOneAndThree = $this->cache->filter(function (Integer $i) {
+//            return 2 === $i->getValue();
+//        });
+//
+//        $this->assertSame(1, $cacheWithoutOneAndThree->count());
+//        $this->assertSame(2, $cacheWithoutOneAndThree->first()->getValue());
+//    }
 } 
