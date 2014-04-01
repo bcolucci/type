@@ -1,0 +1,22 @@
+{
+  "name": "bcolucci/type",
+  "version": "1.0.0",
+  "description": "Provides very simple classes to abstract some primitive PHP types.",
+  "require": {
+    "star/collection": "1.1.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.0.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "Brice Colucci",
+      "email": "brice.colucci@gmail.com"
+    }
+  ]
+}
