@@ -18,6 +18,10 @@ class MemcachedStub implements Cache
 
     public function __construct()
     {
+        if (false === class_exists('\Memcache')) {
+            throw new \PHPUnit_Framework_SkippedTestError('Test cannot be ran, you need Memcache');
+        }
+
         $this->cache = new \Memcache();
         $this->cache->addserver("localhost");
     }
