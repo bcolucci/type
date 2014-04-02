@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Type\Unit;
+namespace test\Type\Unit;
 
 use Bcol\Component\Type\String;
 
