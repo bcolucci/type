@@ -7,9 +7,9 @@
          colors="true"
          syntaxCheck="true"
          strict="true"
-         verbose="true"
+         verbose="false"
          mapTestClassNameToCoveredClassName="false"
-         bootstrap="test/bootstrap.php">
+         bootstrap="vendor/autoload.php">
     <testsuites>
         <testsuite name="main">
             <directory>test/</directory>
