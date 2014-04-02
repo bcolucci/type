@@ -3,7 +3,6 @@
 namespace test\Type\Unit;
 
 use Bcol\Component\Type\Float;
-use Bcol\Component\Type\Numeric;
 
 /**
  * Class FloatTest
