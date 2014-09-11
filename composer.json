@@ -1,19 +1,24 @@
 {
   "name": "bcolucci/type",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Provides very simple classes to abstract some primitive PHP types.",
   "license": "MIT",
   "minimum-stability": "stable",
   "require": {
-    "star/collection": "1.1.*"
+    "star/collection": "~1.2"
   },
   "require-dev": {
-    "phpunit/phpunit": "4.0.*"
+    "phpunit/phpunit": "~4.0"
   },
   "autoload": {
     "psr-0": {
-      "Bcol\\Component\\Type": ["", "src"]
+      "Bcol\\Component\\Type": "src"
     }
+  },
+  "autoload-dev": {
+    "files": [
+      "test/Type/Unit/TypeTest.php"
+    ]
   },
   "authors": [
     {

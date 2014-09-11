@@ -10,7 +10,7 @@ lines to your `composer.json` file.
 
     ...
     "require": {
-        "bcolucci/type": "1.0.*"
+        "bcolucci/type": "~1.2"
     }
     ...
 

@@ -1,4 +1,3 @@
-/*ide*
-/composer.phar
+*ide*
 vendor/
-phpunit.xml.dist
+phpunit.xml
